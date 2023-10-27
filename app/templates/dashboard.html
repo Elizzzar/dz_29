@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block customer %}
+    {% for customer in customers %}
+        <h3>{{ customer.name }}</h3>
+        <p>{{ customer.gmail }}</p>
+        <ul>
+            <li>{{ product.product__name_product }} - {{ product.price }}</li>
+        </ul>
+        <p>{{ customer.delivery }}</p>
+    {% endfor %}
+{% endblock  %}
